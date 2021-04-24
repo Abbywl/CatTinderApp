@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditAccountActivity">
+
+    <TextView
+        android:id="@+id/usernameTextBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="65dp"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="60dp"
+        android:text="Username"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/currentRankText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="65dp"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="20dp"
+        android:text="Current Rank: "
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usernameTextBox" />
+
+    <Button
+        android:id="@+id/EditImageButton"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="65dp"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="25dp"
+        android:text="Edit Image"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/currentRankText" />
+
+    <EditText
+        android:id="@+id/EditBioTextBox"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="65dp"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="24dp"
+        android:layout_weight="1"
+        android:ellipsize="none"
+        android:ems="10"
+        android:hint="Enter info about your mew mew mew!"
+        android:inputType="textShortMessage|textMultiLine|textCapSentences"
+        android:maxLength="200"
+        android:maxLines="5"
+        android:scrollHorizontally="false"
+        android:singleLine="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EditImageButton" />
+
+    <Button
+        android:id="@+id/editAccountButton"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:onClick="onClickCreateEditAccount"
+        android:text="Edit Account"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EditBioTextBox" />
+
+    <ImageView
+        android:id="@+id/lilImageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="24dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/currentRankText"
+        app:srcCompat="@drawable/app_logo" />
+
+    <Button
+        android:id="@+id/logOutButton"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:onClick="onClickLogOut"
+        android:text="Logout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editAccountButton" />
+
+    <Button
+        android:id="@+id/deleteButton"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:onClick="onClickDelete"
+        android:text="Delete Account"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logOutButton" />
+
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/back_arrow"
+        android:onClick="onClickGoBack"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

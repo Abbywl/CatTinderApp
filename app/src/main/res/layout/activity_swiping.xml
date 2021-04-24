@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:background="#f7f7f7"
+    tools:context=".SwipingActivity">
+
+    <ImageView
+        android:id="@+id/profileImageBox"
+        android:layout_width="wrap_content"
+        android:layout_height="527dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/profile_bg" />
+
+    <ImageButton
+        android:id="@+id/createAccountButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/hamburger_icon"
+        android:onClick="onClickHAMBURGEReditMenu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/CatImage"
+        android:layout_width="0dp"
+        android:layout_height="238dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="253dp"
+        app:layout_constraintBottom_toTopOf="@+id/hissButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars[0]" />
+
+    <TextView
+        android:id="@+id/UsernameTextView"
+        android:layout_width="379dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginRight="17dp"
+        android:padding="10dp"
+        android:text="TextView"
+        android:textSize="20sp"
+        app:fontFamily="casual"
+        app:layout_constraintBottom_toTopOf="@+id/catBioText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CatImage" />
+
+    <TextView
+        android:id="@+id/catBioText"
+        android:layout_width="0dp"
+        android:layout_height="162dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginRight="17dp"
+        android:inputType="textShortMessage|textMultiLine|textNoSuggestions"
+        android:padding="10dp"
+        android:text="MeowMeowMeowMeow"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/UsernameTextView" />
+
+    <ImageButton
+        android:id="@+id/purrButton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/paw_button2"
+        android:onClick="onClickPurr"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profileImageBox"
+        tools:srcCompat="@tools:sample/avatars[3]" />
+
+    <ImageButton
+        android:id="@+id/hissButton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="17dp"
+        android:background="@drawable/hiss_button"
+        android:onClick="onClickHiss"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profileImageBox"
+        tools:srcCompat="@tools:sample/avatars[2]" />
+
+</android.support.constraint.ConstraintLayout>

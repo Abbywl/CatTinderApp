@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewAccountActivity">
+
+    <EditText
+        android:id="@+id/enterUsernameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="80dp"
+        android:ems="10"
+        android:hint="Enter New Username"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/enterPasswordText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Enter New PAWsword"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enterUsernameText" />
+
+    <EditText
+        android:id="@+id/EditBioTextBox"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="30dp"
+        android:layout_weight="1"
+        android:ellipsize="none"
+        android:ems="10"
+        android:hint="Enter info about your mew mew mew!"
+        android:inputType="textShortMessage|textMultiLine|textCapSentences"
+        android:maxLength="200"
+        android:maxLines="5"
+        android:scrollHorizontally="false"
+        android:singleLine="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enterPasswordText" />
+
+    <Button
+        android:id="@+id/EditImageButton"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="30dp"
+        android:onClick="onClickGetImage"
+        android:text="Edit Image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EditBioTextBox" />
+
+    <ImageView
+        android:id="@+id/lilImageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/EditImageButton"
+        app:layout_constraintTop_toBottomOf="@+id/EditBioTextBox"
+        app:srcCompat="@drawable/app_logo" />
+
+    <Button
+        android:id="@+id/createAccountButton"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:onClick="onClickCreateNewAccount"
+        android:text="Create Account"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lilImageView" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "847021513758",
+    "firebase_url": "https://cat-tinder-database.firebaseio.com",
+    "project_id": "cat-tinder-database",
+    "storage_bucket": "cat-tinder-database.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:847021513758:android:54af759b7d4e3509",
+        "android_client_info": {
+          "package_name": "com.example.cattinder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "847021513758-ju4cp125rqclneoo8812glf6j107m09j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.cattinder",
+            "certificate_hash": "4620dd3dc7256b64b28856b5b08ebdd4129ac481"
+          }
+        },
+        {
+          "client_id": "847021513758-bt4dh6oht8gagvc89eklkl48db76tfp8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCAYT32dHYksoTBbv--ZVUB_8l4kfqMSfY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "847021513758-bt4dh6oht8gagvc89eklkl48db76tfp8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
